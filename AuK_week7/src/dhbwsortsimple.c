@@ -27,7 +27,7 @@ void BubbleSortArray(Student_p *array, int count) {
 
 //Auf true setzen, damit SelectionSort getestet wird
 bool SelectionSortImplemented() {
-	return false;
+	return true;
 }
 
 //SelectionSort

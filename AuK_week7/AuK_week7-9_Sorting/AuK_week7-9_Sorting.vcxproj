@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2493e151-3f73-493e-bc5a-ee3fcf757690}</ProjectGuid>
-    <RootNamespace>AuKweek7</RootNamespace>
+    <ProjectGuid>{5fe5e32e-e6c4-405f-a949-7494b8c2e17c}</ProjectGuid>
+    <RootNamespace>AuKweek79Sorting</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,23 +70,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -139,38 +127,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\datastructures.c" />
-    <ClCompile Include="..\..\src\dhbwadjlist.c" />
-    <ClCompile Include="..\..\src\dhbwgraphsolve.c" />
-    <ClCompile Include="..\..\src\dhbwmaze.c" />
-    <ClCompile Include="..\..\src\dhbwmazesolve.c" />
-    <ClCompile Include="..\..\src\dhbwsortheap.c" />
-    <ClCompile Include="..\..\src\dhbwsortmerge.c" />
-    <ClCompile Include="..\..\src\dhbwsortmisc.c" />
-    <ClCompile Include="..\..\src\dhbwsortsimple.c" />
-    <ClCompile Include="..\..\src\dhbwstudent.c" />
-    <ClCompile Include="..\..\src\dhbwstudentlist.c" />
-    <ClCompile Include="..\..\src\dhbwstudentmap.c" />
-    <ClCompile Include="..\..\src\dhbwstudenttree.c" />
-    <ClCompile Include="..\..\src\dhbwtest.c" />
-    <ClCompile Include="..\..\src\graphs.c" />
-    <ClCompile Include="..\..\src\maze.c" />
-    <ClCompile Include="..\..\src\sorting.c" />
+    <ClInclude Include="..\src\dhbwadjlist.h" />
+    <ClInclude Include="..\src\dhbwgraphsolve.h" />
+    <ClInclude Include="..\src\dhbwmaze.h" />
+    <ClInclude Include="..\src\dhbwmazesolve.h" />
+    <ClInclude Include="..\src\dhbwsortheap.h" />
+    <ClInclude Include="..\src\dhbwsortmerge.h" />
+    <ClInclude Include="..\src\dhbwsortmisc.h" />
+    <ClInclude Include="..\src\dhbwsortsimple.h" />
+    <ClInclude Include="..\src\dhbwstudent.h" />
+    <ClInclude Include="..\src\dhbwstudentlist.h" />
+    <ClInclude Include="..\src\dhbwstudentmap.h" />
+    <ClInclude Include="..\src\dhbwstudenttree.h" />
+    <ClInclude Include="..\src\dhbwtest.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\dhbwadjlist.h" />
-    <ClInclude Include="..\..\src\dhbwgraphsolve.h" />
-    <ClInclude Include="..\..\src\dhbwmaze.h" />
-    <ClInclude Include="..\..\src\dhbwmazesolve.h" />
-    <ClInclude Include="..\..\src\dhbwsortheap.h" />
-    <ClInclude Include="..\..\src\dhbwsortmerge.h" />
-    <ClInclude Include="..\..\src\dhbwsortmisc.h" />
-    <ClInclude Include="..\..\src\dhbwsortsimple.h" />
-    <ClInclude Include="..\..\src\dhbwstudent.h" />
-    <ClInclude Include="..\..\src\dhbwstudentlist.h" />
-    <ClInclude Include="..\..\src\dhbwstudentmap.h" />
-    <ClInclude Include="..\..\src\dhbwstudenttree.h" />
-    <ClInclude Include="..\..\src\dhbwtest.h" />
+    <ClCompile Include="..\src\dhbwadjlist.c" />
+    <ClCompile Include="..\src\dhbwgraphsolve.c" />
+    <ClCompile Include="..\src\dhbwmaze.c" />
+    <ClCompile Include="..\src\dhbwmazesolve.c" />
+    <ClCompile Include="..\src\dhbwsortheap.c" />
+    <ClCompile Include="..\src\dhbwsortmerge.c" />
+    <ClCompile Include="..\src\dhbwsortmisc.c" />
+    <ClCompile Include="..\src\dhbwsortsimple.c" />
+    <ClCompile Include="..\src\dhbwstudent.c" />
+    <ClCompile Include="..\src\dhbwstudentlist.c" />
+    <ClCompile Include="..\src\dhbwstudentmap.c" />
+    <ClCompile Include="..\src\dhbwstudenttree.c" />
+    <ClCompile Include="..\src\dhbwtest.c" />
+    <ClCompile Include="..\src\sorting.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
