@@ -1,9 +1,9 @@
 /*
  ============================================================================
  Aufgabe     : Sortieren - Woche 7
- Autor       :
- Matrikel    :
- Version     :
+ Autor       : Burst
+ Matrikel    : 4581869
+ Version     : 1.0
  ============================================================================
  */
 #include <stdbool.h>
@@ -16,13 +16,19 @@
 
 //Auf true setzen, damit BubbleSort getestet wird
 bool BubbleSortImplemented() {
-	return false;
+	return true;
 }
 
 //BubbleSort
 void BubbleSortArray(Student_p *array, int count) {
-	for (int i = 0; i < count; i++) {
-
+	for (int i = 0; i < count - 1; i++) {
+        for (int j = 0; j < count - 1; j++) {
+            if (array[j]->matrnr > array[j + 1]->matrnr) {
+                Student_p temp = array[j + 1];
+                array[j + 1] = array[j];
+                array[j] = temp;
+            }
+        }
 	}
 }
 
@@ -33,10 +39,8 @@ bool SelectionSortImplemented() {
 }
 
 //SelectionSort
-void SelectionSortArray(Student_p *array, int count) {
-     
+void SelectionSortArray(Student_p *array, int count) {   
     int i, j;
-    // One by one move boundary of unsorted subarray
     
     for (i = 0; i < count - 1; i++)
     {
@@ -50,10 +54,8 @@ void SelectionSortArray(Student_p *array, int count) {
 
         // Swap the found minimum element
         // with the first element
-        Student_p temp = array[j];
-        array[j] = array[i];
+        Student_p temp = array[min_idx];
+        array[min_idx] = array[i];
         array[i] = temp;
     }
-    //Eigentlich sortiert der SelectionSort alles, jedoch fliege ich bei einem der Tests immer wieder raus. Habe noch nicht ganz verstanden warum. Vielleicht liegt es Mal wieder an der IDE.
-    //Man bekommt es übrigens auch mit VisualStudio mit einem anderen Compiler zu laufen.
 }
