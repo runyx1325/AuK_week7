@@ -25,6 +25,7 @@ bool HeapSortImplemented() {
 void HeapBubbleDown(Student_p *array, int nodeIndex, int end) {
 	int gci, rci;
 	int lci = 2 * nodeIndex + 1;
+	int help;
 	if (lci < end) {
 		gci = lci;
 		rci = lci + 1;
@@ -35,9 +36,9 @@ void HeapBubbleDown(Student_p *array, int nodeIndex, int end) {
 		}
 		if (array[gci] > array[lci]) {
 			//swap
-			Student_p temp = array[gci];
+			help = gci;
 			array[gci] = array[nodeIndex];
-			array[nodeIndex] = temp;
+			array[nodeIndex] = array[help];
 			HeapBubbleDown(array, gci, end);
 		}
 	}
@@ -47,7 +48,6 @@ void HeapBubbleDown(Student_p *array, int nodeIndex, int end) {
 void Heapify(Student_p *array, int count) {
 	int end = count;
 	int last = (count - 1) / 2;
-	//int i = last;
 	for (int i = last; i >= 0; i--) {
 		HeapBubbleDown(array, i, end);
 	}
@@ -57,13 +57,14 @@ void Heapify(Student_p *array, int count) {
 //Heapsort mit Array
 //Tipp: Hilfsfunktionen benutzen
 void HeapSortArray(Student_p *array, int count) {
+	int last = count - 1;
+	int help;
 	Heapify(array, count);
-	for (int i = count - 1; i > 0; i--) {
-		Student_p temp = array[i];
+	for (int i = last; i > 0; i--) {
+		help = i;
 		array[i] = array[0];
-		array[0] = temp;
+		array[0] = array[help];
 		HeapBubbleDown(array, 0, i);
 	}
-	return;
 }
 
