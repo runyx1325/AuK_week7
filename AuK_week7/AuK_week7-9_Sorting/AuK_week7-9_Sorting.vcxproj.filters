@@ -56,9 +56,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\dhbwadjlist.c">
-      <Filter>Ressourcendateien</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\dhbwgraphsolve.c">
       <Filter>Ressourcendateien</Filter>
     </ClCompile>

@@ -207,7 +207,7 @@ int main(int argc, char *argv[]) {
 
 	if(result && HeapSortImplemented()){
 		StudentLP *listForTest = deepLCopy(inputList);
-		result = arraySortTest(S_HEAPSORT, listForTest, MergeSortArray);
+		result = arraySortTest(S_HEAPSORT, listForTest, HeapSortArray);
 		StudentLFree(listForTest);
 	}
 
@@ -273,7 +273,7 @@ int main(int argc, char *argv[]) {
 
 	if(result && HeapSortImplemented()){
 		StudentLP *listForTest = deepLCopy(inputList);
-		arraySortBenchmark(S_HEAPSORT, listForTest, MergeSortArray);
+		arraySortBenchmark(S_HEAPSORT, listForTest, HeapSortArray);
 		StudentLFree(listForTest);
 	}
 

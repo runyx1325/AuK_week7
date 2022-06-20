@@ -342,11 +342,11 @@ AdjNodeP *generateTestAdjList(int nodeAmount) {
 	}
 
 	//create nodes - 1 edges with random list to make sure graph is connected
-	for(int i = 1; i < nodes; i++) {
+	for(int j = 1; j < nodes; j++) {
 		int weight = rand() % 9 + 1;
-		int to = rand() % i;
+		int to = rand() % j;
 
-		AdjEdgeAdd(list, randomlabels[i], randomlabels[to], weight);
+		AdjEdgeAdd(list, randomlabels[j], randomlabels[to], weight);
 	}
 
 	//create additional edges to make it more interesting
