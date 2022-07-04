@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32526.322
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AuK_week7-9_Sorting", "AuK_week7-9_Sorting\AuK_week7-9_Sorting.vcxproj", "{5FE5E32E-E6C4-405F-A949-7494B8C2E17C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AuK_week10_Graph", "AuK_week10_Graph\AuK_week10_Graph.vcxproj", "{0E7BD436-C53B-4B2D-973D-88E62A31311B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{5FE5E32E-E6C4-405F-A949-7494B8C2E17C}.Release|x64.Build.0 = Release|x64
 		{5FE5E32E-E6C4-405F-A949-7494B8C2E17C}.Release|x86.ActiveCfg = Release|Win32
 		{5FE5E32E-E6C4-405F-A949-7494B8C2E17C}.Release|x86.Build.0 = Release|Win32
+		{0E7BD436-C53B-4B2D-973D-88E62A31311B}.Debug|x64.ActiveCfg = Debug|x64
+		{0E7BD436-C53B-4B2D-973D-88E62A31311B}.Debug|x64.Build.0 = Debug|x64
+		{0E7BD436-C53B-4B2D-973D-88E62A31311B}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E7BD436-C53B-4B2D-973D-88E62A31311B}.Debug|x86.Build.0 = Debug|Win32
+		{0E7BD436-C53B-4B2D-973D-88E62A31311B}.Release|x64.ActiveCfg = Release|x64
+		{0E7BD436-C53B-4B2D-973D-88E62A31311B}.Release|x64.Build.0 = Release|x64
+		{0E7BD436-C53B-4B2D-973D-88E62A31311B}.Release|x86.ActiveCfg = Release|Win32
+		{0E7BD436-C53B-4B2D-973D-88E62A31311B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,9 @@
 /*
  ============================================================================
  Aufgabe     : Datenstrukturen - Woche 10
- Autor       :
- Matrikel    :
- Version     :
+ Autor       : Burst
+ Matrikel    : 4581869
+ Version     : 1.0
  ============================================================================
  */
 #include <stdbool.h>
@@ -14,7 +14,7 @@
 
 //Auf true setzen, damit Prim getestet wird
 bool primImplemented() {
-	return false;
+	return true;
 }
 
 //Berechnet den minimalen Spannbaum mittels Prim's Algorithmus

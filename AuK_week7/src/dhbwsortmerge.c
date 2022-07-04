@@ -17,7 +17,7 @@
 
 //Auf true setzen, damit Array-MergeSort getestet wird
 bool MergeSortArrayImplemented() {
-	return true;
+	return false;
 }
 //MergeSort mit Array
 void MergeSortArray(Student_p *array, int count) {
@@ -37,11 +37,11 @@ void MergeSortArray(Student_p *array, int count) {
 		MergeSortArray(arr2, (count / 2) + 1);
 	}
 	int e1 = 0, e2 = 0;
-	for (int i = 0; i < count; i++) {
+	/*for (int i = 0; i < count; i++) {
 		if () {
 
 		}
-	}
+	}*/
 	
 
 
