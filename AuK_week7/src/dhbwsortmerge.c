@@ -1,9 +1,9 @@
 /*
  ============================================================================
  Aufgabe     : Sortieren - Woche 8
- Autor       :
- Matrikel    :
- Version     :
+ Autor       : Burst
+ Matrikel    : 4581869
+ Version     : 1.0
  ============================================================================
  */
 #include <stdbool.h>
@@ -17,10 +17,34 @@
 
 //Auf true setzen, damit Array-MergeSort getestet wird
 bool MergeSortArrayImplemented() {
-	return false;
+	return true;
 }
 //MergeSort mit Array
 void MergeSortArray(Student_p *array, int count) {
+	if (count <= 1) {
+		return;
+	}
+	if (count % 2 == 0) {
+		Student_p arr1[(count / 2)];
+		Student_p arr2[(count / 2)];
+		MergeSortArray(arr1, count / 2);
+		MergeSortArray(arr2, count / 2);
+	}
+	else {
+		Student_p arr1[(count / 2)];
+		Student_p arr2[(count / 2) + 1];
+		MergeSortArray(arr1, count / 2);
+		MergeSortArray(arr2, (count / 2) + 1);
+	}
+	int e1 = 0, e2 = 0;
+	for (int i = 0; i < count; i++) {
+		if () {
+
+		}
+	}
+	
+
+
 }
 
 
